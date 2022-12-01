@@ -103,13 +103,13 @@ services:
     # /host-rootfs/ はコンテナ内の KonomiTV からホストマシンのファイルを読み書きするために必要
     volumes:
       - type: bind
-        source: './config.yaml'
+        source: './konomitv/config.yaml'
         target: '/code/config.yaml'
       - type: bind
-        source: './server/data/'
+        source: './konomitv/server/data/'
         target: '/code/server/data/'
       - type: bind
-        source: './server/logs/'
+        source: './konomitv/server/logs/'
         target: '/code/server/logs/'
       - type: bind
         source: '/'
