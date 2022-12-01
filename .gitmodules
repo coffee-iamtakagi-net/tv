@@ -1,3 +1,6 @@
 [submodule "mirakurun"]
 	path = mirakurun
 	url = https://github.com/iamtakagi/Mirakurun
+[submodule "konomitv"]
+	path = konomitv
+	url = https://github.com/tsukumijima/KonomiTV
