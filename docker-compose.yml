@@ -114,6 +114,8 @@ services:
       - type: bind
         source: '/'
         target: '/host-rootfs/'
+    depends_on:
+      - mirakurun
 
     # ==================== ↓↓↓↓↓ ここからユーザー設定 ↓↓↓↓↓ ====================
 
