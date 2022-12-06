@@ -25,7 +25,7 @@ services:
   mirakurun:
     container_name: Mirakurun
     image: mirakurun:latest
-    build: 
+    build:
       context: ./mirakurun
       dockerfile: docker/Dockerfile
     cap_add:
@@ -58,11 +58,11 @@ services:
     networks:
       - internal
       - default
-  
+
   epgstation:
     container_name: EPGStation
     image: epgstation:latest
-    build: 
+    build:
       context: ./epgstation
       dockerfile: debian.Dockerfile
     volumes:
