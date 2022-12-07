@@ -71,7 +71,7 @@ services:
       - ./epgstation/data:/app/data
       - ./epgstation/thumbnail:/app/thumbnail
       - ./epgstation/logs:/app/logs
-      - /mnt/storage2/TV-Record:/app/recorded
+      - /mnt/storage1/TV/Record:/app/recorded
       - mirakurun_socket:/var/run
     user: 0:0
     environment:
