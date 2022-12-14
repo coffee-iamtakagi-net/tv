@@ -57,7 +57,6 @@ services:
         max-size: 10m
     networks:
       - internal
-      - default
 
   epgstation:
     container_name: EPGStation
@@ -85,7 +84,6 @@ services:
     restart: always
     networks:
       - internal
-      - default
 
   konomitv:
     image: konomitv:latest
@@ -141,8 +139,6 @@ services:
 
 networks:
   internal:
-    internal: true
-  default:
 
 volumes:
   mirakurun_socket:
